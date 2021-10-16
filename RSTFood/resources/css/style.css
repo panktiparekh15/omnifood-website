@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    color: #555555;
+    font-family: 'Lato', 'Georgia';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto; /* top bottom, right left*/
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.65)), url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+
+}
+
+/* can write anything instead of btn*/
+input[type="submit"],
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border-radius: 200px;
+}
+
+/* orange color* rgba(249, 105, 14, 1)*/
+input[type="submit"],
+.btn-full:link,
+.btn-full:visited{
+    background-color: rgba(249, 105, 14, 1) ;
+    border: 1px solid rgba(249, 105, 14, 1);
+    margin-right: 10px;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid rgba(249, 105, 14, 1);
+    color:  rgba(249, 105, 14, 1) ;
+} 
+input[type="submit"]:active,
+input[type="submit"]:hover,
+.btn:hover,
+.btn:active{
+    background-color: #cc4500;
+    color: #ffffff;
+}
+input[type="submit"],
+.btn-full:hover,
+.btn-full:active{
+    
+    color: #ffffff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    
+    color: #ffffff;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.logo-black{
+    display: none;
+    width: auto;
+    height: 50px;
+    float: left;
+    margin: 5px 0;
+}
+
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 18px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 90%;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cc4500;
+    
+}
+
+/*-----------------------section 1----------------*/
+
+section{
+    padding: 85px 0;;
+}
+
+h2{
+    font-size: 190%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2:after{
+    display: block;
+    background-color: #cc4500;
+    content: " ";
+    width: 150px;
+    height: 3px;
+    margin: 0 auto; /* auto is to get left right to center which automatically comes to center*/
+    margin-top: 10px;
+}
+
+.get-text{
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 110%;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.all p{
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+
+ion-icon{
+    font-size: 350%;
+    color: #cc4500;
+    margin: 10px 0;
+}
+/*-----------------------section 2----------------*/
+
+.section-food{
+    padding: 0;
+}
+
+.food-img{
+    list-style: none;
+    width: 100%;
+
+}
+
+.food-img li{
+    width:25%;
+    float: left;
+}
+
+ .menu{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.menu img{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.4s, opacity 0.5s;
+}
+
+.menu img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*--------------section 3----------------*/
+
+.section-steps{
+    background-color: rgb(228, 228, 228);
+    color: #ffffff;
+    background: red;
+    animation: mymove 8s infinite;
+}
+
+/* css animation */
+
+@keyframes mymove{
+    50% {background-color: blue;}
+}
+
+/* .step-box{
+
+    margin-top: 30px;
+} */
+
+.step-box:first-child{
+    text-align: right;
+    padding-right: 4%;
+}
+
+.step-box:last-child{
+    padding-left: 4%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 45%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step div{
+    color: #ffffff;
+    border:3px solid #ffffff;
+    display:inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+.app-btn img{
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    
+}
+
+.app-btn:link,
+.app-btn:visited{
+    border: 0;
+}
+
+
+
+
+
+/*--------------------------------- section 4--------------------------*/
+
+
+.city-feature ion-icon{
+    margin-top: 15px;
+    font-size: 160%;
+    color: #cc4500;
+    margin-right: 5px;
+    margin-bottom: -8px;
+}
+
+.city-feature p{
+    display: inline-block;
+
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+a:link,
+a:visited{
+    color: #1b9cfc;
+    text-decoration: none;
+    
+    border-bottom: 1px solid;
+    transition: border-bottom 0.2s, color 0.2s;
+
+}
+
+a:hover,
+a:active{
+    color: #2b2b2b;
+    border-bottom: 1px solid transparent;
+}
+
+
+/*------------------customer testimonials-----------------------*/
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.customer-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.65)), url(img/back-customers.jpg) ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color:#ffffff;
+    background-attachment: fixed; /* background stays fixed, and content moves when scrolled*/
+
+}
+
+blockquote{
+    padding: 3%;
+    font-style: italic;
+    line-height: 155%;
+    position: relative;
+    margin-top: 80px;
+    font-size: 120%;
+    position: relative;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute; /* whenever we make child absolute, parent has to be relative ie. blockquote has to be relative*/
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 100%;
+    display: block;
+    margin-top: 25px;
+}
+
+/*-----------------section-meals plan-------------------------------*/
+
+.meals-plan{
+    background-color: #dfe6e9;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #d7e0e4;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #dfe6e9;
+    margin-bottom: 10pm;
+}
+
+
+.subs-price{
+    font-size: 280%;
+    margin-bottom: 10px;
+    color: #0d77c9;
+}
+
+.subs-price span{
+    font-size: 30%;
+    font-weight: 300;
+
+}
+
+.subs-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box ul li ion-icon{
+    vertical-align: middle;
+    font-size: medium;
+    margin-right: 10px;
+    color: #0d77c9;
+}
+
+.plan-box div:first-child{
+    background-color: #dae2e4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border:0;
+}
+
+
+/*-------------------------form--------------------------*/
+
+.contact-form{
+    width: 54%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px; 
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type="checkbox"]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+/* input[type="submit"]{
+    padding: 10px;
+    border-radius: 20px; 
+    background-color: #c4294a;
+    border: #000000;
+} */
+
+/* -----------------------footer------------------- */
+
+ion-icon{
+    color: #555555;
+    font-size: 190%;
+
+}
+
+.ab:hover{
+    color: #3735af;
+    transition: color 0.2s;
+    background-color: #ffffff;
+}
+.bc:hover{
+    color: #e30909;
+    transition: color 0.2s;
+    background-color: #ffffff;
+}
+.cd:hover{
+    background-color: #921b35;
+    transition: color 0.2s;
+    color: #ffffff;
+}
+.de:hover{
+    background-color: #0a71c0;
+    transition: color 0.2s;
+    color: #ffffff;
+}
+.ef:hover{
+    color: #154970;
+    transition: color 0.2s;
+    background-color: #fff;
+    
+}
+.fg:hover{
+    color: #fce300;
+    transition: color 0.2s;
+    background-color: #ffffff;
+}
+.gh:hover{
+    background-color: #30cc11;
+    transition: color 0.2s;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #1e272e;
+    padding: 50px;
+}
+
+.footer-nav{
+    margin-bottom: 30px;
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float:right;
+    margin-top: -15px;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: none;
+    color: #555555;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #0984e3;
+    transition: color 0.2s;
+}
+
+.social-links li a:hover,
+.social-links li a:active{
+
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+}
+
+/* sticky navigation */
+
+.sticky-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    box-shadow: 0 2px 2px rgb(78, 78, 78);
+    z-index: 9999;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited{
+    padding: 8px 0;
+    color: rgb(255, 255, 255);
+}
+
+.sticky-nav .logo{
+    display: none;
+}
+
+.sticky-nav .logo-black{
+    display: block;
+}
